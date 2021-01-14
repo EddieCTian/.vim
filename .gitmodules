@@ -22,3 +22,9 @@
 [submodule "pack/nelstrom/start/vim-visual-star-search"]
 	path = pack/nelstrom/start/vim-visual-star-search
 	url = https://github.com/nelstrom/vim-visual-star-search.git
+[submodule "pack/glts/start/vim-magnum"]
+	path = pack/glts/start/vim-magnum
+	url = https://github.com/glts/vim-magnum
+[submodule "pack/glts/start/vim-radical"]
+	path = pack/glts/start/vim-radical
+	url = https://github.com/glts/vim-radical

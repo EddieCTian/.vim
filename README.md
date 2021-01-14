@@ -26,7 +26,7 @@ git submodule update --init --recursive
 ### To add new plugins:
 ```
 cd [where the plugin goes]
-git submodule add git@mygithost .
+git submodule add git@mygithost
 ```
 
 #### Structure:
