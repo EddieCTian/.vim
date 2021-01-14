@@ -1,9 +1,0 @@
-magnum	magnum.txt	/*magnum*
-magnum#Int	magnum.txt	/*magnum#Int*
-magnum#ONE	magnum.txt	/*magnum#ONE*
-magnum#ZERO	magnum.txt	/*magnum#ZERO*
-magnum#random#NextInt	magnum.txt	/*magnum#random#NextInt*
-magnum#random#SetSeed	magnum.txt	/*magnum#random#SetSeed*
-magnum-Integer	magnum.txt	/*magnum-Integer*
-magnum-random	magnum.txt	/*magnum-random*
-magnum.txt	magnum.txt	/*magnum.txt*

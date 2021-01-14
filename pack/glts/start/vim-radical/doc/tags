@@ -1,7 +1,0 @@
-<Plug>RadicalCoerceToBinary	radical.txt	/*<Plug>RadicalCoerceToBinary*
-<Plug>RadicalCoerceToDecimal	radical.txt	/*<Plug>RadicalCoerceToDecimal*
-<Plug>RadicalCoerceToHex	radical.txt	/*<Plug>RadicalCoerceToHex*
-<Plug>RadicalCoerceToOctal	radical.txt	/*<Plug>RadicalCoerceToOctal*
-<Plug>RadicalView	radical.txt	/*<Plug>RadicalView*
-radical	radical.txt	/*radical*
-radical.txt	radical.txt	/*radical.txt*
