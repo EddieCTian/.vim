@@ -1,0 +1,30 @@
+[submodule "pack/tpope/start/repeat"]
+	path = pack/tpope/start/repeat
+	url = https://tpope.io/vim/repeat.git
+[submodule "pack/tpope/start/commentary"]
+	path = pack/tpope/start/commentary
+	url = https://tpope.io/vim/commentary.git
+[submodule "pack/tpope/start/fugitive"]
+	path = pack/tpope/start/fugitive
+	url = https://tpope.io/vim/fugitive.git
+[submodule "pack/tpope/start/speeddating"]
+	path = pack/tpope/start/speeddating
+	url = https://tpope.io/vim/speeddating.git
+[submodule "pack/tpope/start/surround"]
+	path = pack/tpope/start/surround
+	url = https://tpope.io/vim/surround.git
+[submodule "pack/tpope/start/unimpaired"]
+	path = pack/tpope/start/unimpaired
+	url = https://tpope.io/vim/unimpaired.git
+[submodule "pack/tpope/start/vim-abolish"]
+	path = pack/tpope/start/vim-abolish
+	url = https://github.com/tpope/vim-abolish.git
+[submodule "pack/glts/start/vim-magnum"]
+	path = pack/glts/start/vim-magnum
+	url = https://github.com/glts/vim-magnum.git
+[submodule "pack/glts/start/vim-radical"]
+	path = pack/glts/start/vim-radical
+	url = https://github.com/glts/vim-radical.git
+[submodule "pack/nelstrom/start/vim-visual-star-search"]
+	path = pack/nelstrom/start/vim-visual-star-search
+	url = https://github.com/nelstrom/vim-visual-star-search.git

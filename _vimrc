@@ -104,12 +104,6 @@ if has('syntax') && has('eval')
   packadd! matchit
 endif
 
-" sets up plugins for me
-execute pathogen#infect()
-
-
-
-
 
 " set up tag completion, need a tags file with ctags or something?
 set complete+=t
@@ -149,5 +143,3 @@ set infercase
 color desert
 
 :inoremap <C-J> <C-X>
-
-
