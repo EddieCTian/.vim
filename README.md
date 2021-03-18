@@ -59,6 +59,9 @@ $HOME/.vim/pack/my-plugins/
 
 ### On Linux:
 
+Use the Tweaks utility. Under Keyboard & Mouse go to Additional Layout Options and modify the caps lock key. More instructions [here](https://www.emacswiki.org/emacs/MovingTheCtrlKey#h5o-3)
+
+Alternatively, try for more remapping: 
 [xcape](https://github.com/alols/xcape)
 
 ### On ECF:
