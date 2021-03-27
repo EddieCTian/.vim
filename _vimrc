@@ -112,9 +112,6 @@ set history=200
 set backspace=indent,eol,start
 set smarttab
 set number
-set nobackup
-set nowritebackup
-set noundofile
 set clipboard=unnamed
 set shellslash
 set expandtab
@@ -143,3 +140,16 @@ set infercase
 color desert
 
 :inoremap <C-J> <C-X>
+cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
+
+"This line trys to set the compiler according to the filetype automatically
+"for populating the quickfix list
+au BufRead * try | execute "compiler ".&filetype | catch /./ | endtry
+
+
+"These make a .backup directory and put backup/undo files there
+silent !mkdir .backup
+set backup
+set backupdir=./.backup
+set directory=./.backup
+set writebackup
