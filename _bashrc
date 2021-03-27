@@ -1,0 +1,47 @@
+# enable color support of ls and also add handy aliases
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    alias ls='ls --color=auto'
+    #alias dir='dir --color=auto'
+    #alias vdir='vdir --color=auto'
+
+    alias grep='grep --color=auto'
+    alias fgrep='fgrep --color=auto'
+    alias egrep='egrep --color=auto'
+fi
+
+# some more ls aliases
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+
+# Git aliases
+alias ga='git add *'
+alias gs='git status'
+alias gl='git log'
+
+gc(){
+  git commit -m "$1"
+}
+
+# cd aliases
+alias cdh="cd ~"
+
+cd() {
+    if [[ $@ == "wiki" ]]; then
+        command cd ~/rsx_wiki/rover.wiki
+    else
+        command cd "$@"
+    fi
+}
+
+# ros aliases
+
+alias resource='source ~/catkin_ws/devel/setup.bash' #sources the catkin workspace again
+
+cm() {
+        command cd ~/catkin_ws
+        command catkin_make
+        command cd -
+}
+
