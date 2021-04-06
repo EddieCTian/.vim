@@ -144,12 +144,12 @@ cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
 "This line trys to set the compiler according to the filetype automatically
 "for populating the quickfix list
-au BufRead * try | execute "compiler ".&filetype | catch /./ | endtry
+"au BufRead * try | execute "compiler ".&filetype | catch /./ | endtry
 
 
 "These make a .backup directory and put backup/undo files there
-silent !mkdir .backup
-set backup
-set backupdir=./.backup
-set directory=./.backup
-set writebackup
+"silent !mkdir .backup
+"set backup
+"set backupdir=./.backup
+"set directory=./.backup
+"set writebackup
