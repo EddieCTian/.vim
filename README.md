@@ -10,6 +10,7 @@ git clone --recurse-submodules https://github.com/EddieCTian/.vim.git
 ### File locations:
 
 Unix		`$HOME/.vimrc` or `$HOME/.vim/vimrc`
+
 MS-Windows	`$HOME/_vimrc`, `$HOME/vimfiles/vimrc`, or `$VIM/_vimrc`
 
 
