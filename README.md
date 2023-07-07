@@ -7,8 +7,12 @@ All plugins and personalizations for vim in one easy to clone repository
 ```
 git clone --recurse-submodules https://github.com/EddieCTian/.vim.git
 ```
+### File locations:
 
-On Unix, change \_vimrc to .vimrc
+Unix		`$HOME/.vimrc` or `$HOME/.vim/vimrc`
+
+MS-Windows	`$HOME/_vimrc`, `$HOME/vimfiles/vimrc`, or `$VIM/_vimrc`
+
 
 ### To update repository:
 
