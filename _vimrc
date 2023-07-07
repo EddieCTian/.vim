@@ -2,6 +2,7 @@
 if &compatible
   set nocompatible
 endif
+
 silent! while 0
   set nocompatible
 silent! endwhile
@@ -70,11 +71,12 @@ if !exists(":DiffOrig")
 		  \ | wincmd p | diffthis
 endif
 
-
 if has('gui_running')
-    set guifont=Consolas:h11
-    set guifontwide=NSimsun:h12
-    set lines=40 columns=100
+    color koehler
+endif
+
+if has("autocmd")
+    autocmd BufNewFile,BufRead Makefile set noexpandtab " Makefiles ensure that we don't expand tabs since tabs are special
 endif
 
 filetype plugin indent on
@@ -126,7 +128,7 @@ set smartindent
 set showcmd
 set ttimeout
 set ttimeoutlen=100
-set display=truncate "show @@@ in the last line if it is truncated
+" set display=truncate "show @@@ in the last line if it is truncated
 set scrolloff=5
 set nrformats-=octal
 set laststatus=2
@@ -137,7 +139,6 @@ set ignorecase
 set smartcase
 set viminfo='100,<50,s10,h
 set infercase
-color desert
 
 :inoremap <C-J> <C-X>
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
@@ -153,3 +154,11 @@ cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 "set backupdir=./.backup
 "set directory=./.backup
 "set writebackup
+
+"if filetype detected to be an AMD file, from ~/.vim/filetype.vim, change
+"comments to //
+autocmd FilterWritePre * if &diff | setlocal wrap< | endif
+autocmd FileType dj set commentstring=//%s
+autocmd FileType bia set commentstring=//%s
+autocmd FileType ewe set commentstring=//%s
+autocmd FileType ale set commentstring=//%s
